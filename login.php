@@ -20,6 +20,7 @@ if (isset($_POST['login'])) {
             $_SESSION['nama_lengkap'] = $data['nama_lengkap'];
             $_SESSION['role'] = $data['role'];
             $_SESSION['status'] = "login";
+
             header("location:dashboard/index.php?message=Selamat Datang di Simple Attendance System dek 🤩");
         }
     } else {
