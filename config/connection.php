@@ -1,10 +1,10 @@
 <?php
-$host = "localhost";
-$user = "root";
+$hostname = "localhost";
+$username = "root";
 $pass = "";
 $db_name = "db_absensi";
 
-$db = new mysqli($host, $user, $pass, $db_name);
+$db = new mysqli($hostname, $username, $pass, $db_name);
 
 if ($db->connect_error) {
     echo "Connection failed";

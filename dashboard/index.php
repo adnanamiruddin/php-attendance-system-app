@@ -12,7 +12,7 @@ if ($status != 'login') {
 if (isset($_POST['logout'])) {
     session_destroy();
     header("location:../index.php?message=Terima kasih telah melakukan absensi");
-} 
+}
 ?>
 
 <!DOCTYPE html>
@@ -36,6 +36,9 @@ if (isset($_POST['logout'])) {
     <i>Halo <?= $nama_lengkap ?></i>
     <p>Status Kepegawaian : <?= $role ?></p>
     <br />
+
+    <!-- Show Attendance Data -->
+    <?php include("attendance.php") ?>
 
     <form action="" method="POST">
         <button type="submit" name="logout">Logout</button>
