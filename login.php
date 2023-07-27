@@ -1,9 +1,14 @@
 <?php
 include("connection.php");
+include("models/User.php");
+
+$user = new User();
 
 if (isset($_POST['login'])) {
-    $user_id = $_POST['user_id'];
-    $password = $_POST['password'];
+    $user->set_login_data($_POST['user_id'], $_POST['password']);
+
+    $user_id = $user->get_user_id();
+    $password = $user->get_password();
 
     $query = "SELECT * FROM users WHERE user_id='$user_id' AND password='$password'";
     $result = $db->query($query);
