@@ -41,7 +41,7 @@ if (isset($_POST['logout'])) {
     <?php include("attendance.php") ?>
 
     <form action="" method="POST">
-        <button type="submit" name="logout">Logout</button>
+        <button type="submit" name="logout">Keluar</button>
     </form>
 </body>
 

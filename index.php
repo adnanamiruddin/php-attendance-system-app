@@ -28,7 +28,7 @@ if (isset($_SESSION['status']) && $_SESSION['status'] == 'login') {
                 ?>
                 <input type="text" name="user_id" class="login-input" />
                 <input type="password" name="password" class="login-input" />
-                <button type="submit" name="login" class="login-button">Login</button>
+                <button type="submit" name="login" class="login-button">Masuk</button>
             </form>
         </div>
     </div>

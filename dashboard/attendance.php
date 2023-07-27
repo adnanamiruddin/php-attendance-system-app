@@ -24,6 +24,6 @@
     ?>
 </table>
 
-<form action="" method="POST">
-    <button type="submit" name="absen"></button>
+<form action="action.php" method="POST">
+    <button type="submit" name="absen">Absen</button>
 </form>
